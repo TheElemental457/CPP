@@ -1,6 +1,6 @@
 // The API isBadVersion is defined for you.
 // bool isBadVersion(int version);
-
+//https://leetcode.com/problems/first-bad-version/
 class Solution {
 public:
     int firstBadVersion(int n) {
