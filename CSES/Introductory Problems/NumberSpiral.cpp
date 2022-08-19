@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-#define int long long
 /*
 Logic if x%2==1 and x>y:
 Every collum number squared is the first number.
@@ -13,14 +12,14 @@ This logic applies to when y>x too, but reversed with evens and odds.
 */
 // https://cses.fi/problemset/task/1071
 
-signed main()
+int main()
 {
-    int t;
+    long long t, z;
     cin>>t;
-    while(t-->0)
+    for(long long i=1; i<=t; i++)
     {
-        long long x, y, z=0;
-        cin>>x>>y;
+        long long x, y;
+        cin>>y>>x;
         if(x>y)
         {
             if(x%2==0)
@@ -28,20 +27,20 @@ signed main()
                 z=((x-1)*(x-1))+y;
                 cout<<z<<endl;
             }
-            else
+            else if(x%2==1)
             {   
                 z=((x*x)-y)+1;
                 cout<<z<<endl;
             }
         }
-        else
+        else if(y>=x)
         {
             if(y%2==0)
             {
                 z=((y*y)-x)+1;
                 cout<<z<<endl;
             }
-            else
+            else if(y%2==1)
             {  
                 z=((y-1)*(y-1))+x;
                 cout<<z<<endl;
