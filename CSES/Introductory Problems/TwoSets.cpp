@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-//https://cses.fi/problemset/task/1071/
+//https://cses.fi/problemset/task/1092
 /*
 Formula for sum of all digits from 1 to n is (n*(n+1))/2.
 Since we are trying to find two groups, it is (n*(n+1))/4.
